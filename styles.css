@@ -1,0 +1,107 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-image: url(img/backgroundForBody.jpg);
+  background-size: cover;
+}
+
+#menu {
+  /* background-color: blue; */
+
+  position: fixed;
+  width: 15%;
+  background: linear-gradient(0.25turn, #3e5863, #bb8641, #951da0);
+  margin: 0px;
+  padding: 0px;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+#menu li {
+  list-style-type: none;
+  font-family: fantasy;
+  font-size: 35px;
+  margin: inherit;
+  text-align: center;
+}
+#menu li:hover {
+  background-color: rgb(25, 25, 78);
+  color: gainsboro;
+}
+#menu li a:hover {
+  cursor: default;
+}
+.block1 {
+  position: absolute;
+  border: 3px inset rgb(109, 33, 119);
+  width: 30%;
+  background-color: darkgray;
+  left: 20%;
+  height: 70%;
+  padding: 5px;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(70, 132, 168);
+}
+.block1 h5 {
+  font-family: cursive;
+  color: darkmagenta;
+  font-size: 15px;
+}
+hr {
+  border: none;
+  height: 2px;
+  color: rgb(109, 33, 119);
+  background-color: rgb(109, 33, 119);
+}
+.block1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 2px solid brown;
+  height: 100px;
+  width: auto;
+}
+.block1 p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.block1 .full {
+  text-align: center;
+  border-radius: 80%;
+  background-color: sandybrown;
+}
+.block1 .icons {
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 30%;
+  background-color: springgreen;
+}
+.block2 {
+  position: absolute;
+  border: 3px inset rgb(109, 33, 119);
+  width: 30%;
+  background-color: darkgray;
+  left: 55%;
+  height: 100%;
+  overflow: scroll;
+  padding: 10px;
+}
+.block2 img {
+  display: block;
+  margin-left: 0;
+
+  border-radius: 10%;
+  border: 2px solid brown;
+  height: 100px;
+  width: auto;
+}
+button {
+  border-radius: 3%;
+  border: teal solid 1px;
+  background: linear-gradient(0.25turn, #3e5863, #bb8641, #951da0);
+}
+
