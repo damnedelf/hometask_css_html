@@ -5,12 +5,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
- background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #menu {
   position: fixed;
-  width: auto;
+  width: 15%;
   background: linear-gradient(0.25turn, #3e5863, #bb8641, #951da0);
   margin: 0px;
   padding: 0px;
@@ -19,9 +19,8 @@ body {
 }
 
 #menu li {
-  
   list-style-type: none;
-  font-family: fantasy; 
+  font-family: fantasy;
   font-size: 3vh;
   margin: inherit;
   text-align: center;
@@ -34,11 +33,9 @@ body {
 #menu li a:hover {
   cursor: default;
 }
-#container{
-  max-width: 1200px ;
+#container {
+  max-width: 1200px;
   margin: 0px auto;
- 
-
 }
 .block1 {
   position: absolute;
@@ -49,13 +46,11 @@ body {
   height: 100%;
   padding: 5px;
   overflow: scroll;
- 
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(70, 132, 168);
   font-size: 3vh;
- 
 }
 .block1 h5 {
   font-family: cursive;
@@ -74,9 +69,9 @@ hr {
   margin-right: auto;
   border-radius: 50%;
   border: 2px solid brown;
-  height:10vh;
+  height: 10vh;
   width: auto;
-  animation: blink 4s ;
+  animation: blink 4s;
   position: center;
 }
 .block1 p {
@@ -87,16 +82,16 @@ hr {
   border-radius: 80%;
   background-color: sandybrown;
 }
-@keyframes moveIcons{
-  0%{
-    bottom:20px ;
+@keyframes moveIcons {
+  0% {
+    bottom: 20px;
     background-color: crimson;
   }
-  50%{
+  50% {
     bottom: 0px;
     background-color: rgb(24, 11, 14);
   }
-  100%{
+  100% {
     bottom: 20px;
     background-color: darkcyan;
   }
@@ -137,8 +132,8 @@ hr {
     opacity: 0;
   }
 }
-.block2 #name{
-  animation: blink 2s ;
+.block2 #name {
+  animation: blink 2s;
 }
 .block2 img {
   display: block;
@@ -148,7 +143,7 @@ hr {
   border: 2px solid brown;
   height: 100px;
   width: auto;
-  animation: blink 4s ;
+  animation: blink 4s;
 }
 /* .block2 img:hover{
   animation: blink 4s ;
@@ -158,4 +153,54 @@ button {
   border-radius: 3%;
   border: teal solid 1px;
   background: linear-gradient(0.25turn, #3e5863, #bb8641, #951da0);
+}
+@media (max-width: 1200px) {
+  #container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  #container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  #container {
+    max-width: none;
+  }
+  #menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 8%;
+  }
+  #menu li {
+    display: block;
+    float: left;
+    padding: 0 10px;
+  }
+  .block1 {
+    position: absolute;
+    border: 3px inset rgb(109, 33, 119);
+    width: auto;
+    background-color: darkgray;
+
+    left: 0%;
+    padding: 5px;
+    overflow: scroll;
+    top:9%;
+    height: 40%;
+    vertical-align: text-bottom;
+  }
+  .block2{
+    position: absolute;
+    border: 3px inset rgb(109, 33, 119);
+    width: 100%;
+    background-color: darkgray;
+    left:0px ;
+    height: 46%;
+    padding: 5px;
+    overflow: scroll;
+    bottom:0px;
+  }
 }
